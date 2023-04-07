@@ -10,6 +10,7 @@ ul {
 
 body {
   font-family: 'Roboto Flex', sans-serif;
+  margin: 0;
 }
 
 h1 {
@@ -19,15 +20,16 @@ h1 {
 
 header {
   padding: 3rem 1rem 3rem;
+  margin-left: 2rem;
 }
 
 nav {
   display: inline-block;
 }
 
-main {
+.gallery {
+  width: 95%;
   margin: 0 auto;
-  width: 900px;
 }
 
 .links {
@@ -52,6 +54,7 @@ a.active {
 .card img {
   height: 400px;
   width: 100%;
+  object-fit: cover;
 }
 
 .card {
@@ -64,4 +67,43 @@ a.active {
   display: inline-block;
   margin: 0.5rem 0 1rem 0;
   font-weight: 500;
+}
+
+.about {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: lightgrey;
+  padding: 5rem 0;
+  margin-top: 4rem;
+  color: black;
+  text-align: center;
+}
+
+.work-together {
+  text-align: left;
+  padding-left: 3.8rem;
+  max-width: 300px;
+}
+
+.work-together h3 {
+  border-bottom: 1px solid black;
+}
+
+.contact-h3 {
+  border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 600px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
 }
